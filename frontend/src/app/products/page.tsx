@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Snowflake, Package } from 'lucide-react'
+import { Snowflake, Package, Phone } from 'lucide-react'
 
 // Mock product data
 const mockProducts = [
@@ -194,15 +194,27 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary via-primary-light to-accent text-white py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 right-10 text-9xl animate-pulse">🛒</div>
-          <div className="absolute bottom-10 left-10 text-9xl animate-pulse" style={{animationDelay: '1s'}}>🍽️</div>
+      <section className="bg-gradient-to-br from-amber-50 via-green-50 to-orange-50 py-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 w-full h-full" style={{
+            backgroundImage: 'radial-gradient(circle, #8B4513 1px, transparent 1px)',
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-10 right-10 text-[150px] opacity-10">🛒</div>
+          <div className="absolute bottom-10 left-10 text-[150px] opacity-10">📦</div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-2xl">Our Products</h1>
-            <p className="text-xl md:text-2xl text-white drop-shadow-lg">
+            <div className="inline-flex items-center gap-2 mb-6 bg-white px-6 py-3 rounded-full shadow-xl border-2 border-secondary/20">
+              <Package className="w-5 h-5 text-primary" />
+              <span className="text-primary font-bold text-sm">
+                Browse Our Complete Product Catalog
+              </span>
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">Our Products</h1>
+            <p className="text-xl md:text-2xl text-neutral-700">
               Premium quality frozen products for bulk orders
             </p>
           </div>
@@ -213,9 +225,9 @@ export default function ProductsPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           {/* Info Note */}
-          <div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-secondary/10 to-secondary/5 border-l-4 border-secondary rounded-lg p-6">
+          <div className="max-w-4xl mx-auto mb-12 bg-gradient-to-r from-food-frozen to-white border-l-4 border-secondary rounded-lg p-6 shadow-lg">
             <p className="text-neutral-700">
-              <span className="font-bold text-secondary">📸 Note:</span> Product images are currently placeholders. 
+              <span className="font-bold text-primary">📸 Note:</span> Product images are currently placeholders. 
               Once you connect the backend and upload product images through the Django admin panel, 
               actual product photos will be displayed here automatically.
             </p>
@@ -295,16 +307,23 @@ export default function ProductsPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-16 text-center bg-gradient-to-br from-secondary via-secondary-light to-accent text-white rounded-3xl p-12 shadow-2xl relative overflow-hidden">
+          <div className="mt-16 text-center bg-gradient-to-br from-primary via-primary-light to-accent text-white rounded-3xl p-12 shadow-2xl relative overflow-hidden border-4 border-white">
             <div className="absolute top-0 right-0 text-9xl opacity-10">📞</div>
-            <div className="absolute bottom-0 left-0 text-9xl opacity-10">💬</div>
-            <h2 className="text-3xl font-bold mb-4 relative z-10 drop-shadow-lg">Need Custom Quantities?</h2>
-            <p className="text-lg mb-8 text-white drop-shadow relative z-10 max-w-2xl mx-auto">
-              We can accommodate special requirements and custom bulk orders. Get in touch with our team to discuss your needs.
+            <div className="absolute bottom-0 left-0 text-9xl opacity-10">🤝</div>
+            <h2 className="text-3xl font-bold mb-4 relative z-10">Need Custom Quantities?</h2>
+            <p className="text-lg mb-8 text-white/95 relative z-10 max-w-2xl mx-auto">
+              We can accommodate special requirements and custom bulk orders. Get in touch with our team to discuss your needs and get competitive pricing.
             </p>
-            <a href="/contact" className="btn bg-white text-secondary hover:bg-primary hover:text-white text-lg px-10 py-4 font-bold shadow-2xl transform hover:scale-105 transition-all relative z-10">
-              Contact Us
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+              <a href="/contact" className="btn bg-white text-primary hover:bg-secondary hover:text-white text-lg px-10 py-4 font-bold shadow-2xl transform hover:scale-105 transition-all">
+                <Phone className="w-5 h-5" />
+                Contact Us
+              </a>
+              <a href="tel:+1234567890" className="btn bg-secondary text-white hover:bg-secondary-dark text-lg px-10 py-4 font-bold shadow-2xl transform hover:scale-105 transition-all border-2 border-white">
+                <Phone className="w-5 h-5" />
+                Call Now
+              </a>
+            </div>
           </div>
         </div>
       </section>
