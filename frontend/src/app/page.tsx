@@ -55,7 +55,7 @@ export default function HomePage() {
             </div>
             
             <p className="text-base md:text-lg mb-10 text-primary max-w-2xl mx-auto leading-relaxed bg-white/50 backdrop-blur-xl rounded-xl p-5 border-2 border-white shadow-lg font-semibold">
-              Quality grocery pulses, frozen vegetables & fruits, and ready-to-cook processed foods delivered to your doorstep
+              Quality grocery & staples, frozen vegetables & fruits, and ready-to-cook processed foods delivered to your doorstep
             </p>
             
             {/* Pure Glass CTA Buttons */}
@@ -93,7 +93,7 @@ export default function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Grocery Pulses */}
+            {/* Grocery & Staples */}
             <div className="group relative bg-white/70 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
               {/* Product Image Area */}
               <div className="h-48 bg-gradient-to-br from-amber-100/80 to-amber-50/80 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
@@ -105,9 +105,9 @@ export default function HomePage() {
               
               {/* Content */}
               <div className="p-6 bg-white/60 backdrop-blur-xl">
-                <h3 className="text-xl font-bold mb-2 text-primary">Grocery Pulses</h3>
+                <h3 className="text-xl font-bold mb-2 text-primary">Grocery & Staples</h3>
                 <p className="text-neutral-700 mb-4 leading-relaxed text-sm">
-                  Red lentils, chickpeas, kidney beans, moong dal, and more premium quality pulses
+                  Pulses, wheat, rice, flour, and all essential grocery staples in bulk quantities
                 </p>
                 
                 <div className="space-y-2 mb-4">

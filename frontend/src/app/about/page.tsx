@@ -35,7 +35,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white/40 backdrop-blur-xl rounded-2xl p-8 border border-white/60 shadow-xl mb-8">
               <p className="text-xl text-primary font-semibold leading-relaxed">
-                We specialize in delivering premium quality grocery pulses, frozen vegetables & fruits, and delicious processed foods like samosas 
+                We specialize in delivering premium quality grocery & staples (pulses, wheat, rice, flour), frozen vegetables & fruits, and delicious processed foods like samosas 
                 directly to your doorstep in bulk quantities.
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function AboutPage() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">🌾</span>
-                  <p className="text-neutral-700"><strong className="text-primary">Grocery Pulses:</strong> Premium lentils, chickpeas, kidney beans, and more in bulk quantities</p>
+                  <p className="text-neutral-700"><strong className="text-primary">Grocery & Staples:</strong> Pulses, wheat, rice, flour, and all essential grocery items in bulk quantities</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">🥦</span>

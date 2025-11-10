@@ -5,11 +5,11 @@ import { Snowflake, Package, Phone } from 'lucide-react'
 
 // Mock product data
 const mockProducts = [
-  // Grocery Pulses
+  // Grocery & Staples
   {
     id: 1,
     name: 'Premium Red Lentils',
-    category: 'Grocery Pulses',
+    category: 'Grocery & Staples',
     emoji: '🌾',
     description: 'High-quality red lentils, perfect for dal and soups',
     moq: '50 kg',
@@ -19,7 +19,7 @@ const mockProducts = [
   {
     id: 2,
     name: 'Chickpeas (Kabuli Chana)',
-    category: 'Grocery Pulses',
+    category: 'Grocery & Staples',
     emoji: '🌾',
     description: 'Premium chickpeas for curries and salads',
     moq: '50 kg',
@@ -29,7 +29,7 @@ const mockProducts = [
   {
     id: 3,
     name: 'Kidney Beans (Rajma)',
-    category: 'Grocery Pulses',
+    category: 'Grocery & Staples',
     emoji: '🌾',
     description: 'Dark red kidney beans, ideal for traditional dishes',
     moq: '50 kg',
@@ -39,7 +39,7 @@ const mockProducts = [
   {
     id: 4,
     name: 'Yellow Moong Dal',
-    category: 'Grocery Pulses',
+    category: 'Grocery & Staples',
     emoji: '🌾',
     description: 'Split yellow moong lentils for quick cooking',
     moq: '50 kg',
@@ -49,7 +49,7 @@ const mockProducts = [
   {
     id: 5,
     name: 'Black Gram (Urad Dal)',
-    category: 'Grocery Pulses',
+    category: 'Grocery & Staples',
     emoji: '🌾',
     description: 'Premium black gram for authentic Indian cuisine',
     moq: '50 kg',
@@ -185,7 +185,7 @@ const mockProducts = [
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All')
   
-  const categories = ['All', 'Grocery Pulses', 'Frozen Vegetables & Fruits', 'Processed Food']
+  const categories = ['All', 'Grocery & Staples', 'Frozen Vegetables & Fruits', 'Processed Food']
   
   const filteredProducts = selectedCategory === 'All' 
     ? mockProducts 

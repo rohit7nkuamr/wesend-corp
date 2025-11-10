@@ -130,7 +130,7 @@ export default function ContactPage() {
                 <div className="bg-white/50 backdrop-blur-xl rounded-2xl p-8 border-2 border-white shadow-xl">
                   <h3 className="text-xl font-bold mb-3 text-primary">Browse Our Products</h3>
                   <p className="text-neutral-700 mb-6 text-sm">
-                    Explore our range of grocery pulses, frozen vegetables & fruits, and delicious samosas before getting in touch.
+                    Explore our range of grocery & staples, frozen vegetables & fruits, and delicious processed foods before getting in touch.
                   </p>
                   <a href="/products" className="btn bg-secondary hover:bg-secondary-dark text-white text-base px-8 py-3 font-bold rounded-lg shadow-lg">
                     View Products
