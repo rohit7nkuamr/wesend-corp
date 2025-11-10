@@ -22,49 +22,49 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             {/* Pure Glass Badge */}
-            <div className="inline-flex items-center gap-2 mb-6 bg-white/30 backdrop-blur-xl px-5 py-2 rounded-full border border-white/50 shadow-xl">
-              <Snowflake className="w-4 h-4 text-white" />
-              <span className="text-xs font-semibold text-white">
+            <div className="inline-flex items-center gap-2 mb-6 bg-white/60 backdrop-blur-xl px-5 py-2 rounded-full border-2 border-white shadow-xl">
+              <Snowflake className="w-4 h-4 text-secondary" />
+              <span className="text-xs font-bold text-primary">
                 Fresh • Frozen at -40°C • Delivered to Your Door
               </span>
             </div>
             
             {/* Main Heading - Glass Effect */}
-            <div className="mb-6 bg-white/20 backdrop-blur-2xl rounded-2xl p-6 md:p-8 border border-white/40 shadow-2xl">
-              <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+            <div className="mb-6 bg-white/40 backdrop-blur-2xl rounded-2xl p-6 md:p-8 border-2 border-white shadow-2xl">
+              <h1 className="text-4xl md:text-6xl font-bold text-primary leading-tight" style={{textShadow: '2px 2px 4px rgba(255,255,255,0.8)'}}>
                 Premium Frozen Foods
                 <br />
-                <span className="text-3xl md:text-5xl text-white/90">For Bulk Orders</span>
+                <span className="text-3xl md:text-5xl text-primary">For Bulk Orders</span>
               </h1>
             </div>
             
             {/* Pure Glass Product Badges */}
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <div className="flex items-center gap-2 bg-white/25 backdrop-blur-xl px-4 py-2 rounded-xl border border-white/50 shadow-lg transform hover:scale-105 transition-all hover:bg-white/35">
+              <div className="flex items-center gap-2 bg-white/60 backdrop-blur-xl px-4 py-2 rounded-xl border-2 border-white shadow-lg transform hover:scale-105 transition-all hover:bg-white/70">
                 <span className="text-2xl">🌾</span>
-                <span className="font-semibold text-white text-sm">Pulses</span>
+                <span className="font-bold text-primary text-sm">Pulses</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/25 backdrop-blur-xl px-4 py-2 rounded-xl border border-white/50 shadow-lg transform hover:scale-105 transition-all hover:bg-white/35">
+              <div className="flex items-center gap-2 bg-white/60 backdrop-blur-xl px-4 py-2 rounded-xl border-2 border-white shadow-lg transform hover:scale-105 transition-all hover:bg-white/70">
                 <span className="text-2xl">🥦</span>
-                <span className="font-semibold text-white text-sm">Vegetables</span>
+                <span className="font-bold text-secondary text-sm">Vegetables</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/25 backdrop-blur-xl px-4 py-2 rounded-xl border border-white/50 shadow-lg transform hover:scale-105 transition-all hover:bg-white/35">
+              <div className="flex items-center gap-2 bg-white/60 backdrop-blur-xl px-4 py-2 rounded-xl border-2 border-white shadow-lg transform hover:scale-105 transition-all hover:bg-white/70">
                 <span className="text-2xl">🥟</span>
-                <span className="font-semibold text-white text-sm">Samosas</span>
+                <span className="font-bold text-accent text-sm">Samosas</span>
               </div>
             </div>
             
-            <p className="text-base md:text-lg mb-10 text-white max-w-2xl mx-auto leading-relaxed bg-white/15 backdrop-blur-xl rounded-xl p-5 border border-white/30">
+            <p className="text-base md:text-lg mb-10 text-primary max-w-2xl mx-auto leading-relaxed bg-white/50 backdrop-blur-xl rounded-xl p-5 border-2 border-white shadow-lg font-semibold">
               Quality grocery pulses, frozen vegetables & fruits, and ready-to-cook processed foods delivered to your doorstep
             </p>
             
             {/* Pure Glass CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/products" className="btn bg-white/25 backdrop-blur-xl hover:bg-white/35 text-white text-base px-8 py-3 shadow-xl transform hover:scale-105 transition-all font-semibold rounded-xl border border-white/50">
+              <Link href="/products" className="btn bg-secondary hover:bg-secondary-dark text-white text-base px-8 py-3 shadow-2xl transform hover:scale-105 transition-all font-bold rounded-xl border-2 border-white">
                 <Package className="w-5 h-5" />
                 Browse Products
               </Link>
-              <Link href="/contact" className="btn bg-white/25 backdrop-blur-xl hover:bg-white/35 text-white border border-white/50 text-base px-8 py-3 shadow-xl transform hover:scale-105 transition-all font-semibold rounded-xl">
+              <Link href="/contact" className="btn bg-white/70 backdrop-blur-xl hover:bg-white text-primary border-2 border-white text-base px-8 py-3 shadow-2xl transform hover:scale-105 transition-all font-bold rounded-xl">
                 <Phone className="w-5 h-5" />
                 Get Quote
               </Link>
@@ -84,112 +84,112 @@ export default function HomePage() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
-            <div className="inline-block bg-white/25 backdrop-blur-xl rounded-2xl p-6 border border-white/50 shadow-xl mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">What We Offer</h2>
+            <div className="inline-block bg-white/60 backdrop-blur-xl rounded-2xl p-6 border-2 border-white shadow-2xl mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary">What We Offer</h2>
             </div>
-            <p className="text-base text-white max-w-2xl mx-auto font-semibold bg-white/20 backdrop-blur-lg rounded-xl p-3 border border-white/40">
+            <p className="text-base text-primary max-w-2xl mx-auto font-bold bg-white/50 backdrop-blur-lg rounded-xl p-3 border-2 border-white shadow-lg">
               Three main categories of premium frozen products for bulk orders
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Grocery Pulses */}
-            <div className="group relative bg-white/30 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border border-white/60 transform hover:-translate-y-2 hover:bg-white/35">
+            <div className="group relative bg-white/70 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
               {/* Product Image Area */}
-              <div className="h-48 bg-white/20 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-amber-100/80 to-amber-50/80 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
                 <div className="text-7xl group-hover:scale-110 transition-transform duration-300">🌾</div>
-                <div className="absolute top-3 right-3 bg-white/30 backdrop-blur-lg px-3 py-1 rounded-full text-xs font-semibold text-white border border-white/50">
+                <div className="absolute top-3 right-3 bg-primary px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg">
                   BULK ORDERS
                 </div>
               </div>
               
               {/* Content */}
-              <div className="p-6 bg-white/25 backdrop-blur-xl">
-                <h3 className="text-xl font-bold mb-2 text-white">Grocery Pulses</h3>
-                <p className="text-white/90 mb-4 leading-relaxed text-sm">
+              <div className="p-6 bg-white/60 backdrop-blur-xl">
+                <h3 className="text-xl font-bold mb-2 text-primary">Grocery Pulses</h3>
+                <p className="text-neutral-700 mb-4 leading-relaxed text-sm">
                   Red lentils, chickpeas, kidney beans, moong dal, and more premium quality pulses
                 </p>
                 
                 <div className="space-y-2 mb-4">
-                  <div className="flex items-center gap-2 text-xs text-white bg-white/20 backdrop-blur-lg px-3 py-2 rounded-lg border border-white/40">
-                    <Package className="w-4 h-4 text-white" />
-                    <span className="font-semibold">MOQ: 50 kg</span>
+                  <div className="flex items-center gap-2 text-xs text-primary bg-white/70 backdrop-blur-lg px-3 py-2 rounded-lg border border-primary/20 shadow-sm">
+                    <Package className="w-4 h-4 text-accent" />
+                    <span className="font-bold">MOQ: 50 kg</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-white bg-white/20 backdrop-blur-lg px-3 py-2 rounded-lg border border-white/40">
-                    <Snowflake className="w-4 h-4 text-white" />
-                    <span className="font-semibold">-40°C to -18°C</span>
+                  <div className="flex items-center gap-2 text-xs text-primary bg-white/70 backdrop-blur-lg px-3 py-2 rounded-lg border border-secondary/20 shadow-sm">
+                    <Snowflake className="w-4 h-4 text-secondary" />
+                    <span className="font-bold">-40°C to -18°C</span>
                   </div>
                 </div>
                 
-                <Link href="/products?category=pulses" className="btn bg-white/25 backdrop-blur-xl hover:bg-white/35 text-white w-full text-center py-3 rounded-lg font-semibold shadow-lg transform hover:scale-105 transition-all border border-white/50 text-sm">
+                <Link href="/products?category=pulses" className="btn bg-primary hover:bg-primary-light text-white w-full text-center py-3 rounded-lg font-bold shadow-lg transform hover:scale-105 transition-all text-sm">
                   View Products →
                 </Link>
               </div>
             </div>
 
             {/* Frozen Vegetables & Fruits */}
-            <div className="group relative bg-white/30 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border border-white/60 transform hover:-translate-y-2 hover:bg-white/35">
+            <div className="group relative bg-white/70 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
               {/* Product Image Area */}
-              <div className="h-48 bg-white/20 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-green-100/80 to-green-50/80 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
                 <div className="text-7xl group-hover:scale-110 transition-transform duration-300">🥦</div>
-                <div className="absolute top-3 right-3 bg-white/30 backdrop-blur-lg px-3 py-1 rounded-full text-xs font-semibold text-white border border-white/50">
+                <div className="absolute top-3 right-3 bg-secondary px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg">
                   FARM FRESH
                 </div>
               </div>
               
               {/* Content */}
-              <div className="p-6 bg-white/25 backdrop-blur-xl">
-                <h3 className="text-xl font-bold mb-2 text-white">Frozen Vegetables & Fruits</h3>
-                <p className="text-white/90 mb-4 leading-relaxed text-sm">
+              <div className="p-6 bg-white/60 backdrop-blur-xl">
+                <h3 className="text-xl font-bold mb-2 text-primary">Frozen Vegetables & Fruits</h3>
+                <p className="text-neutral-700 mb-4 leading-relaxed text-sm">
                   Green peas, sweet corn, mixed vegetables, berries, mango chunks - frozen at peak freshness
                 </p>
                 
                 <div className="space-y-2 mb-4">
-                  <div className="flex items-center gap-2 text-xs text-white bg-white/20 backdrop-blur-lg px-3 py-2 rounded-lg border border-white/40">
-                    <Package className="w-4 h-4 text-white" />
-                    <span className="font-semibold">MOQ: 15-25 kg</span>
+                  <div className="flex items-center gap-2 text-xs text-primary bg-white/70 backdrop-blur-lg px-3 py-2 rounded-lg border border-primary/20 shadow-sm">
+                    <Package className="w-4 h-4 text-accent" />
+                    <span className="font-bold">MOQ: 15-25 kg</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-white bg-white/20 backdrop-blur-lg px-3 py-2 rounded-lg border border-white/40">
-                    <Snowflake className="w-4 h-4 text-white" />
-                    <span className="font-semibold">-40°C to -18°C</span>
+                  <div className="flex items-center gap-2 text-xs text-primary bg-white/70 backdrop-blur-lg px-3 py-2 rounded-lg border border-secondary/20 shadow-sm">
+                    <Snowflake className="w-4 h-4 text-secondary" />
+                    <span className="font-bold">-40°C to -18°C</span>
                   </div>
                 </div>
                 
-                <Link href="/products?category=vegetables" className="btn bg-white/25 backdrop-blur-xl hover:bg-white/35 text-white w-full text-center py-3 rounded-lg font-semibold shadow-lg transform hover:scale-105 transition-all border border-white/50 text-sm">
+                <Link href="/products?category=vegetables" className="btn bg-secondary hover:bg-secondary-dark text-white w-full text-center py-3 rounded-lg font-bold shadow-lg transform hover:scale-105 transition-all text-sm">
                   View Products →
                 </Link>
               </div>
             </div>
 
             {/* Processed Food */}
-            <div className="group relative bg-white/30 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border border-white/60 transform hover:-translate-y-2 hover:bg-white/35">
+            <div className="group relative bg-white/70 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
               {/* Product Image Area */}
-              <div className="h-48 bg-white/20 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-orange-100/80 to-orange-50/80 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
                 <div className="text-7xl group-hover:scale-110 transition-transform duration-300">🥟</div>
-                <div className="absolute top-3 right-3 bg-white/30 backdrop-blur-lg px-3 py-1 rounded-full text-xs font-semibold text-white border border-white/50">
+                <div className="absolute top-3 right-3 bg-accent px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg">
                   READY TO COOK
                 </div>
               </div>
               
               {/* Content */}
-              <div className="p-6 bg-white/25 backdrop-blur-xl">
-                <h3 className="text-xl font-bold mb-2 text-white">Processed Food</h3>
-                <p className="text-white/90 mb-4 leading-relaxed text-sm">
+              <div className="p-6 bg-white/60 backdrop-blur-xl">
+                <h3 className="text-xl font-bold mb-2 text-primary">Processed Food</h3>
+                <p className="text-neutral-700 mb-4 leading-relaxed text-sm">
                   Samosas, spring rolls, cutlets, pakoras - delicious ready-to-cook items for quick service
                 </p>
                 
                 <div className="space-y-2 mb-4">
-                  <div className="flex items-center gap-2 text-xs text-white bg-white/20 backdrop-blur-lg px-3 py-2 rounded-lg border border-white/40">
-                    <Package className="w-4 h-4 text-white" />
-                    <span className="font-semibold">MOQ: 50-100 pcs</span>
+                  <div className="flex items-center gap-2 text-xs text-primary bg-white/70 backdrop-blur-lg px-3 py-2 rounded-lg border border-primary/20 shadow-sm">
+                    <Package className="w-4 h-4 text-accent" />
+                    <span className="font-bold">MOQ: 50-100 pcs</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-white bg-white/20 backdrop-blur-lg px-3 py-2 rounded-lg border border-white/40">
-                    <Snowflake className="w-4 h-4 text-white" />
-                    <span className="font-semibold">-40°C to -18°C</span>
+                  <div className="flex items-center gap-2 text-xs text-primary bg-white/70 backdrop-blur-lg px-3 py-2 rounded-lg border border-secondary/20 shadow-sm">
+                    <Snowflake className="w-4 h-4 text-secondary" />
+                    <span className="font-bold">-40°C to -18°C</span>
                   </div>
                 </div>
                 
-                <Link href="/products?category=processed" className="btn bg-white/25 backdrop-blur-xl hover:bg-white/35 text-white w-full text-center py-3 rounded-lg font-semibold shadow-lg transform hover:scale-105 transition-all border border-white/50 text-sm">
+                <Link href="/products?category=processed" className="btn bg-accent hover:bg-accent-hover text-white w-full text-center py-3 rounded-lg font-bold shadow-lg transform hover:scale-105 transition-all text-sm">
                   View Products →
                 </Link>
               </div>
