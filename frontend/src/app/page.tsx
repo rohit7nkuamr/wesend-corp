@@ -8,14 +8,12 @@ export default function HomePage() {
       <section className="relative min-h-screen overflow-hidden">
         {/* Vibrant Food Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-amber-200 via-green-200 to-orange-200">
-          {/* Large Food Images - More Visible */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-10 left-10 text-[250px] animate-pulse">🌾</div>
-            <div className="absolute top-1/4 right-10 text-[220px] animate-pulse" style={{animationDelay: '0.5s'}}>🥦</div>
-            <div className="absolute bottom-20 left-1/4 text-[280px] animate-pulse" style={{animationDelay: '1s'}}>🥟</div>
-            <div className="absolute top-1/2 right-1/3 text-[200px] animate-pulse" style={{animationDelay: '1.5s'}}>🌽</div>
-            <div className="absolute bottom-10 right-10 text-[230px] animate-pulse" style={{animationDelay: '2s'}}>🍓</div>
-            <div className="absolute top-1/3 left-1/3 text-[180px] animate-pulse" style={{animationDelay: '2.5s'}}>🥕</div>
+          {/* Large Food Images - Optimized */}
+          <div className="absolute inset-0 opacity-25 pointer-events-none">
+            <div className="absolute top-10 left-10 text-[180px]">🌾</div>
+            <div className="absolute top-1/4 right-10 text-[160px]">🥦</div>
+            <div className="absolute bottom-20 left-1/4 text-[200px]">🥟</div>
+            <div className="absolute bottom-10 right-10 text-[150px]">🍓</div>
           </div>
         </div>
         
@@ -75,11 +73,10 @@ export default function HomePage() {
 
       {/* Categories Section - Pure Glass */}
       <section className="py-20 relative bg-gradient-to-br from-orange-200 via-amber-200 to-green-200">
-        {/* Background Food Elements */}
-        <div className="absolute inset-0 opacity-25">
-          <div className="absolute top-20 left-10 text-[200px] animate-pulse">🍲</div>
-          <div className="absolute bottom-20 right-10 text-[200px] animate-pulse" style={{animationDelay: '1s'}}>🥗</div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[250px] animate-pulse" style={{animationDelay: '2s'}}>🍱</div>
+        {/* Background Food Elements - Optimized */}
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <div className="absolute top-20 left-10 text-[150px]">🍲</div>
+          <div className="absolute bottom-20 right-10 text-[150px]">🥗</div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -94,9 +91,9 @@ export default function HomePage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Grocery & Staples */}
-            <div className="group relative bg-white/70 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
+            <div className="group relative bg-white/70 backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
               {/* Product Image Area */}
-              <div className="h-48 bg-gradient-to-br from-amber-100/80 to-amber-50/80 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-amber-100/80 to-amber-50/80 flex items-center justify-center relative overflow-hidden">
                 <div className="text-7xl group-hover:scale-110 transition-transform duration-300">🌾</div>
                 <div className="absolute top-3 right-3 bg-primary px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg">
                   BULK ORDERS
@@ -128,9 +125,9 @@ export default function HomePage() {
             </div>
 
             {/* Frozen Vegetables & Fruits */}
-            <div className="group relative bg-white/70 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
+            <div className="group relative bg-white/70 backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
               {/* Product Image Area */}
-              <div className="h-48 bg-gradient-to-br from-green-100/80 to-green-50/80 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-green-100/80 to-green-50/80 flex items-center justify-center relative overflow-hidden">
                 <div className="text-7xl group-hover:scale-110 transition-transform duration-300">🥦</div>
                 <div className="absolute top-3 right-3 bg-secondary px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg">
                   FARM FRESH
@@ -162,9 +159,9 @@ export default function HomePage() {
             </div>
 
             {/* Processed Food */}
-            <div className="group relative bg-white/70 backdrop-blur-2xl rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
+            <div className="group relative bg-white/70 backdrop-blur-lg rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all border-2 border-white transform hover:-translate-y-2 hover:bg-white/80">
               {/* Product Image Area */}
-              <div className="h-48 bg-gradient-to-br from-orange-100/80 to-orange-50/80 backdrop-blur-xl flex items-center justify-center relative overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-orange-100/80 to-orange-50/80 flex items-center justify-center relative overflow-hidden">
                 <div className="text-7xl group-hover:scale-110 transition-transform duration-300">🥟</div>
                 <div className="absolute top-3 right-3 bg-accent px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg">
                   READY TO COOK
